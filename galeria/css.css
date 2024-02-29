@@ -1,0 +1,243 @@
+.custum-file-upload {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #000;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 48px 35px -48px rgba(0,0,0,0.1);
+  }
+  .todo{
+ position: relative;
+ padding: 1em;
+ 
+  }
+.body{
+  overflow: auto;
+ 
+}
+
+  .custum-file-upload .iconFile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .iconFile svg {
+    height: 80px;
+    fill: rgba(75, 85, 99, 1);
+  }
+
+  .custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .text span {
+    font-weight: 400;
+    color: rgba(75, 85, 99, 1);
+  }
+  
+  .custum-file-upload input {
+    display: none;
+  }
+  input{
+    border: 2px solid black;
+    
+  }
+  textarea{
+    border: 2px solid black;
+    
+  }
+  .conten  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   cursor: pointer;
+   
+   border-radius: .5em;
+   box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.2);
+  }
+  .resultado{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-auto-rows: 250px;
+    grid-gap: 15px;
+    padding: 50px 0;
+  }
+
+  .conten{
+    position: relative;
+  }
+  .conten .contInfo{
+    transition: all ease .4s;
+    cursor: grab;
+    opacity: 0;
+  }
+  .conten .contInfo:hover{
+    opacity: 1;
+  }
+  .conten .informacion{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    text-align: center;
+    overflow: hidden;
+    overflow-y: auto;
+    
+    border-radius: .5em;
+    padding: 1em; 
+  
+  }
+
+  /* Estilos específicos para Webkit (Chrome, Safari) */
+  .conten .informacion::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar vertical */
+}
+
+.conten .informacion::-webkit-scrollbar-thumb {
+  background-color: #cacaca;
+  border-radius: 1em; /* Color del thumb (la parte arrastrable) */
+  cursor: pointer;
+}
+
+.conten .informacion::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0.3); 
+  /* Color de la pista (la parte no arrastrable) */
+  border-radius: .2em;
+}
+.conten .informacion h3{
+  color: rgb(238, 238, 238);
+ display: inline-block;
+ user-select: none;
+ font-weight: 700;
+ text-transform:capitalize ;
+  border-bottom:2px solid  rgb(238, 238, 238);
+  padding: 0 .5em;
+}
+.conten .informacion p{
+  color: white;
+  font-size: 500;
+
+}
+.conten .informacion button{
+  border: none;
+  border-radius: .5em;
+  
+  transition: all ease .2s; background-color: white;
+  color: black;
+}
+.conten .informacion button:hover{
+ background-color:#212529;
+  color: white;
+}
+.imagen{
+ 
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen img{
+  height: 100%;
+  
+}
+.iconDen{
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+  
+}
+.iconDen i{
+  display: block;
+  color: white;
+ font-size: 20px;
+  cursor: pointer;
+  transition: all ease .3s;
+  z-index: 400;
+}
+.iconDen i:hover{
+  color: #212529;
+}
+.visualizar{
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.InformacionV{
+  position: relative;
+}
+.InformacionV i{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.inoutTextUrl{
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+.inoutTextUrl i{
+  position: absolute;
+  color: white;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all ease .2s;
+}
+.inoutTextUrl i:hover{
+  color: #000;
+}
+#titleInput{
+  background-color: #212529;
+  color: white;
+  outline: none;
+  border: none;
+}
+#comment{
+  background-color: #212529;
+  color: white;
+  outline: none;
+  border: none;
+}
+form .enviar,form .limpiar{
+  background-color: #000;
+  color: white;
+  transition: all ease .2s;
+}
+form .enviar:hover,form .limpiar:hover{
+  background-color: #212529;
+  color: white;
+}

@@ -1,0 +1,41 @@
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(108, 117, 125);
+    display: flex;
+    justify-content: center;
+}
+
+.todo {
+   
+    height: 100vh;
+    
+    width: 100vw;
+    overflow: hidden;
+}
+.emplesa,.usuarios{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  
+}
+.emplesa i,
+.usuarios i {
+    transition: all ease 0.3s;
+    font-size: 15em;
+    color: #212529;
+    
+}
+
+.todoDentro1,
+.todoDentro2 {
+ 
+    cursor: pointer;
+}
+
+.emplesa h5,
+.usuarios h5 {
+    transition: all ease 0.3s;
+   
+}

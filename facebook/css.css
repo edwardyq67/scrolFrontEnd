@@ -1,0 +1,11 @@
+.blockquote{
+    display: grid;
+    
+}
+
+.blockquote img{
+    margin: auto;
+    max-height: 20vh;
+    width: auto;
+    max-width: 100%;
+}
